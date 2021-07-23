@@ -1,0 +1,54 @@
+GET http://localhost:4000/api/users
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoxLCJlbWFpbCI6ImFkbWluQGdtYWlsLmNvbSIsImlhdCI6MTYyNzAzMzMzMCwiZXhwIjoxNjI3MDMzMzYwfQ.YURSg6geexlUSWFTwf8FC1WRVPxEkwYGbWuOg_sjb1Y
+Content-Type: application/json
+
+###
+GET http://localhost:4000/api/users/2
+Content-Type: application/json
+
+###
+DELETE http://localhost:4000/api/users/
+Content-Type: application/json
+
+{ 
+    "id": "4"
+}
+
+###
+POST http://localhost:4000/api/sign-in/
+Content-Type: application/json
+
+{ 
+    "email": "admin@gmail.com",
+    "password": "admin"
+}
+
+###
+POST http://localhost:4000/api/register/
+Content-Type: application/json
+
+{ 
+    "last_name": "Del Mundo",
+    "first_name": "John Paul",
+    "middle_name": "Dazo",
+    "email": "user@gmail.com",
+    "password": "user"
+}
+
+
+###
+PUT http://localhost:4000/api/users/edit/1
+Content-Type: application/json
+
+{ 
+    "last_name": "Del Mundo",
+    "first_name": "John Paul",
+    "middle_name": "Dazo",
+    "email": "admin@gmail.com",
+    "password": "admin",
+    "isActive": "1"
+}
+
+###
+GET http://localhost:4000/api/header
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoxLCJlbWFpbCI6ImFkbWluQGdtYWlsLmNvbSIsImlhdCI6MTYyNzAzMzExMSwiZXhwIjoxNjI3MDMzMTI2fQ.6zU5hj24bZlSM6Bc6zZizPbJYf8Z5xkaGrFRu5red5U
